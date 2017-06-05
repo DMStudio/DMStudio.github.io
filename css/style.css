@@ -21,6 +21,7 @@
 	++++CSS Animation++++
 	++++Media++++
 */
+
 /* ====================
 General Style
 --------------------------------------------------------------*/
@@ -41,7 +42,8 @@ body{
 	text-align:center;
 }
 .clear{
-	clear:both;float:none;
+	clear:both;
+	float:none;
 }
 @-o-viewport {
 	width: device-width;
@@ -104,7 +106,7 @@ h6 {
 	max-width:800px;
 	margin:0 auto;
 }
-
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 /* ====================
 Content Styles
 --------------------------------------------------------------*/
@@ -155,6 +157,7 @@ Content Styles
 	background:#D2D2D2;
 	margin:20px auto;
 }
+
 #intro, .sections, .no-nav, .social-list{
 	width: 100%;
 	float:left;
@@ -163,7 +166,6 @@ Content Styles
 	float:left;
 	width:100%;
 	position:relative;
-
 }
 .rester{
 	position:absolute;
@@ -271,14 +273,12 @@ Color styles - add you color here
 	background: #F54F36 url(../images/project-prev1.png) no-repeat center;
 }
 
-/* =====
-page preload
---------------------*/
-
+/* =============
+	Page preload
+---------------------------------*/
 #jpreOverlay {
-	background-color: #292929;
+	background: #292929;
 }
-
 #jpreLoader{
 	width:600px;
 	height:100px;
@@ -336,10 +336,7 @@ overlays global
 	width:100%;
 	height:auto;
 }
-.nobg{
-	background-image:none !important;
-	background:none !important;
-	z-index:2;}
+
 /* ====================
 Navigation
 --------------------------------------------------------------*/
@@ -460,22 +457,16 @@ Intro
 	position: absolute;
 	display:block;
 }
-/* =
-if mobile add this background
------*/
-.mob-video{
-	background-image:url(../images/bg/1.jpg);
+.slides-big-img{
+	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
-	background-position: top;
-}
-.player{
-	top:0;
-	left:0;
+	background-position: 50% 0;
 	width: 100%;
 	height: 100%;
-	position: fixed;
-	display:block;
+	top:0;
+	left:0;
+	background-attachment:fixed;
+	position:absolute;
 }
 .patern{
 	width:50%;
@@ -582,6 +573,7 @@ About
 	right:10%;
 	top:10%;
 	display:block;
+
 }
 .customNavigation a.close{
 	position:relative;
@@ -965,6 +957,7 @@ Team
 	bottom:-10px;
 	height:1px;
 }
+
 .box {
 	float:left;
 	width: 25%;
@@ -1233,6 +1226,7 @@ subscribe
 	line-height:40px;
 	padding:4px;
 }
+
 .subcribe fieldset{
 	border:1px solid #101011;
 	background: none !important;
@@ -1548,6 +1542,7 @@ Contact form
 	border-radius:4px;
 	letter-spacing:3px;
 }
+
 .success{
 	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.2);
 	border:1px solid #101011;
@@ -2041,7 +2036,7 @@ Blog
 plugins button
 --------------------------------------------------------------*/
 
-.flex-direction-nav .flex-next { right: 0;border-top-left-radius: 6px; border-bottom-left-radius: 6px; }
+.flex-direction-nav .flex-next { right: 0; border-top-left-radius: 6px; border-bottom-left-radius: 6px; }
 .flex-direction-nav .flex-prev {left: 0; border-top-right-radius: 6px; border-bottom-right-radius: 6px;}
 
 /* ====================
@@ -2207,6 +2202,7 @@ Tablet
 #jpreLoader{
 	width:250px;
 }
+
 .contact-details div.grid-2{
 	width:100%;
 	border:none !important;
@@ -2260,6 +2256,7 @@ h2, .nobig {
     width: 96.969696969697%;
     margin: 0 1.315151515152%;
 }
+
 .flex-about{
 	display:none;
 }
@@ -2307,9 +2304,61 @@ Retina
 .member-skils p {
 	font-size:14px;
 }
+
 }
 
 
 .member-social-list{
 	margin-top: 40px;
 }
+
+
+	.container{padding-bottom:30px;}
+		.row{display:flex; justify-content: space-between;flex-wrap: wrap;}
+		.servises_item{margin-bottom: 10px;display: inline-block;}
+		.iconfont{display:inline-block;width:150px;color:white;line-height:120px;text-align:center;font-size:80px;}
+		.servises_item h3{font-size:18px;line-height: 1.4em;}
+		.servises_item h4{font-size:13px;line-height:24px;text-align:center;text-transform: capitalize;}
+		.servises_item a{display:inline-block;color:#fff;border-radius: 10px;border:1px solid #fff;width:170px;line-height:20px;text-align:center;padding:3px 0px;}
+		.owl-item .item{display:flex;justify-content:center;}
+		.owl-item .item h2{color:#62b054;line-height:56px;font-size:46px;font-weight:700;margin-bottom: 20px;text-align:left;}
+		.owl-item .item h3{line-height:40px;font-size:32px;font-weight:700;text-align:left;}
+		/*.owl-item .item div{padding-top:95px;}
+		.owl-item .item img{height:414px;}
+		.owl-item .item ul{margin-top:20px;}*/
+		.owl-item .item i{margin-right:15px;}
+		.owl-item .item li{text-align:left;line-height:20px;margin:10px 0px;}
+		@media screen and (max-width:600px){
+			.row{
+				display:flex;
+				justify-content:center;
+			}
+			.owl-item .item{
+				display:block;
+			}
+			#clientsay .item p{
+				display:block; text-align:center;width:100%;
+			}
+			#clientsay .item span{
+				display:block; text-align:center;
+			}
+		}
+
+
+
+#priceSlider .item .plan{ position: relative;cursor: default; }
+		.plan img{ width: 100%;height: 100%;position: relative; }
+		.testShadow{ position: absolute;left: 0;right: 0;top: 0;background-color: rgba(88,88,88,0.9);overflow: hidden;height: 0;text-align: center;z-index: 10;color: white; }
+		.testShadow a{ width: 100%;height: 100%; }
+		.testShadow h3{ margin-top: 50px;font-weight: bold; }
+		.testShadow p{ color: white; }
+		.check-profile{ height: 0; }
+		.order{ z-index: 999;top: -12px; }
+
+.profile-content{ width: 100%; }
+		.profile-content img{ width: 80%; }
+		.profile-content .profile-introduction{ text-align: left; }
+		.profile-content .button{ margin: 0 20px; }
+
+
+
