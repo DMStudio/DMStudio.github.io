@@ -741,108 +741,108 @@ function initPortfolio() {
 
 // google map styles and functions  --------
 
-	var map;
-	// your coordinates   --------
-	var cashemir = new google.maps.LatLng( 40.761467,-73.956379);	
-	function initialize() {	
-	  var styles = [
-		{
-			featureType: 'water',
-			elementType: 'all',
-			stylers: [
-				{ hue: '#292929' },
-				{ saturation: -100 },
-				{ lightness: -18 },
-				{ visibility: 'on' }
-			]
-		},{
-			featureType: 'landscape',
-			elementType: 'all',
-			stylers: [
-				{ hue: '#292929' },
-				{ saturation: -100 },
-				{ lightness: -78 },
-				{ visibility: 'on' }
-			]
-		},{
-			featureType: 'road',
-			elementType: 'all',
-			stylers: [
-				{ hue: '#292929' },
-				{ saturation: -100 },
-				{ lightness: -34 },
-				{ visibility: 'on' }
-			]
-		},{
-			featureType: 'road.local',
-			elementType: 'all',
-			stylers: [
-				{ hue: '#292929' },
-				{ saturation: -115 },
-				{ lightness: -12 },
-				{ visibility: 'on' }
-			]
-		},{
-			featureType: 'poi.park',
-			elementType: 'all',
-			stylers: [
-				{ hue: '#292929' },
-				{ saturation: -100 },
-				{ lightness: -3 },
-				{ visibility: 'on' }
-			]
-		},{
-			featureType: 'poi',
-			elementType: 'all',
-			stylers: [
-				{ hue: '#292929' },
-				{ saturation: -500 },
-				{ lightness: -3 },
-				{ visibility: 'on' }
-			]
-		},{
-			featureType: 'transit',
-			elementType: 'all',
-			stylers: [
-				{ hue: '#212121' },
-				{ saturation: -20 },
-				{ lightness: -2 },
-				{ visibility: 'on' }
-			]
-		}
+// 	var map;
+// 	// your coordinates   --------
+// 	var cashemir = new google.maps.LatLng( 40.761467,-73.956379);	
+// 	function initialize() {	
+// 	  var styles = [
+// 		{
+// 			featureType: 'water',
+// 			elementType: 'all',
+// 			stylers: [
+// 				{ hue: '#292929' },
+// 				{ saturation: -100 },
+// 				{ lightness: -18 },
+// 				{ visibility: 'on' }
+// 			]
+// 		},{
+// 			featureType: 'landscape',
+// 			elementType: 'all',
+// 			stylers: [
+// 				{ hue: '#292929' },
+// 				{ saturation: -100 },
+// 				{ lightness: -78 },
+// 				{ visibility: 'on' }
+// 			]
+// 		},{
+// 			featureType: 'road',
+// 			elementType: 'all',
+// 			stylers: [
+// 				{ hue: '#292929' },
+// 				{ saturation: -100 },
+// 				{ lightness: -34 },
+// 				{ visibility: 'on' }
+// 			]
+// 		},{
+// 			featureType: 'road.local',
+// 			elementType: 'all',
+// 			stylers: [
+// 				{ hue: '#292929' },
+// 				{ saturation: -115 },
+// 				{ lightness: -12 },
+// 				{ visibility: 'on' }
+// 			]
+// 		},{
+// 			featureType: 'poi.park',
+// 			elementType: 'all',
+// 			stylers: [
+// 				{ hue: '#292929' },
+// 				{ saturation: -100 },
+// 				{ lightness: -3 },
+// 				{ visibility: 'on' }
+// 			]
+// 		},{
+// 			featureType: 'poi',
+// 			elementType: 'all',
+// 			stylers: [
+// 				{ hue: '#292929' },
+// 				{ saturation: -500 },
+// 				{ lightness: -3 },
+// 				{ visibility: 'on' }
+// 			]
+// 		},{
+// 			featureType: 'transit',
+// 			elementType: 'all',
+// 			stylers: [
+// 				{ hue: '#212121' },
+// 				{ saturation: -20 },
+// 				{ lightness: -2 },
+// 				{ visibility: 'on' }
+// 			]
+// 		}
 	
-	  ];  
-	  var mapOptions = {
-		zoom:18,
-		zoomControl: false,
-		scaleControl: false,
-		scrollwheel: false,
-		disableDefaultUI:true,
-		center: cashemir,
-		mapTypeControlOptions: {
-		   mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'bestfromgoogle']
-		}
-	  };
-	map = new google.maps.Map(document.getElementById("map_canvas"),
-		 mapOptions);
-	var styledMapOptions = {
-		  name: "cashemir"
-	}	
-	var jayzMapType = new google.maps.StyledMapType(
-		styles, styledMapOptions);
-	map.mapTypes.set('bestfromgoogle', jayzMapType);
-	map.setMapTypeId('bestfromgoogle');				
-	var companyImage = new google.maps.MarkerImage('images/marker.png',
-		new google.maps.Size(30,30),
-		new google.maps.Point(0,0),
-		new google.maps.Point(28,58)
-	);
-	// your marker coordinates   --------
-	var companyPos = new google.maps.LatLng(40.761467,-73.956379);
-	var companyMarker = new google.maps.Marker({
-		position: companyPos,
-		map: map,
-		icon: companyImage,
-		zIndex: 3
-	});
-}
+// 	  ];  
+// 	  var mapOptions = {
+// 		zoom:18,
+// 		zoomControl: false,
+// 		scaleControl: false,
+// 		scrollwheel: false,
+// 		disableDefaultUI:true,
+// 		center: cashemir,
+// 		mapTypeControlOptions: {
+// 		   mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'bestfromgoogle']
+// 		}
+// 	  };
+// 	map = new google.maps.Map(document.getElementById("map_canvas"),
+// 		 mapOptions);
+// 	var styledMapOptions = {
+// 		  name: "cashemir"
+// 	}	
+// 	var jayzMapType = new google.maps.StyledMapType(
+// 		styles, styledMapOptions);
+// 	map.mapTypes.set('bestfromgoogle', jayzMapType);
+// 	map.setMapTypeId('bestfromgoogle');				
+// 	var companyImage = new google.maps.MarkerImage('images/marker.png',
+// 		new google.maps.Size(30,30),
+// 		new google.maps.Point(0,0),
+// 		new google.maps.Point(28,58)
+// 	);
+// 	// your marker coordinates   --------
+// 	var companyPos = new google.maps.LatLng(40.761467,-73.956379);
+// 	var companyMarker = new google.maps.Marker({
+// 		position: companyPos,
+// 		map: map,
+// 		icon: companyImage,
+// 		zIndex: 3
+// 	});
+// }
