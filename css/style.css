@@ -816,7 +816,6 @@ Team
 --------------------------------------------------------------*/
 
 #servises{
-	background-image:url(../images/bg/1.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: top;
@@ -1193,7 +1192,6 @@ subscribe
 --------------------------------------------------------------*/
 
 #subscribe{
-	background-image:url(../images/bg/1.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: top;
@@ -1282,7 +1280,6 @@ Testimonials
 --------------------------------------------------------------*/
 	
 #testimonials{
-	background-image:url(../images/bg/1.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: top;
@@ -1647,7 +1644,6 @@ Blog
 --------------------------------------------------------------*/
 
 .simple-page-head{
-	background-image:url(../images/bg/1.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
